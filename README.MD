@@ -12,5 +12,7 @@ python3 -m venv ~/.venvs/chaostk
 source  ~/.venvs/chaostk/bin/activate
 pip install chaostoolkit
 pip install chaostoolkit-spring
-Run the experiment: chaos run experiments.json
+Run the experiment: 
+chaos run exception_experiment.json 
+chaos run latency_experiment.json
 ```
