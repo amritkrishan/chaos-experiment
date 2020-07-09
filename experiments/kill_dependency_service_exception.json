@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "title": "Consumer service when Employee dependency service death",
+  "description": "N/A",
+  "tags": [],
+  "steady-state-hypothesis": {
+    "probes": [
+      {
+        "name": "consumer-service-must-still-respond",
+        "provider": {
+          "type": "http",
+          "url": "http://localhost:8090/invokeConsumedService"
+        },
+        "tolerance": 200,
+        "type": "probe"
+      }
+    ],
+    "title": "System is healthy"
+  },
+  "method": [
+    {
+      "name": "enable_chaosmonkey",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8080/actuator"
+        },
+        "func": "enable_chaosmonkey",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    },
+    {
+      "name": "configure_assaults",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8080/actuator",
+          "assaults_configuration": {
+            "level": 1,
+            "latencyRangeStart": 2000,
+            "latencyRangeEnd": 5000,
+            "latencyActive": false,
+            "exceptionsActive": false,
+            "killApplicationActive": true,
+            "restartApplicationActive": false
+          }
+        },
+        "func": "change_assaults_configuration",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    },
+    {
+      "name": "trigger-kill",
+      "provider": {
+        "type": "http",
+        "url": "http://localhost:8090/"
+      },
+      "type": "probe"
+    }
+  ],
+  "rollbacks": []
+}
