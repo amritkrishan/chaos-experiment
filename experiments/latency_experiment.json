@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "title": "Employee when latency is introduced",
+  "description": "N/A",
+  "tags": [],
+  "steady-state-hypothesis": {
+    "probes": [
+      {
+        "name": "api-must-still-respond",
+        "provider": {
+          "type": "http",
+          "url": "http://localhost:8080/employee/all",
+          "timeout": [0.25, 0.25]
+        },
+        "tolerance": 200,
+        "type": "probe"
+      }
+    ],
+    "title": "System is healthy"
+  },
+  "method": [
+    {
+      "name": "enable_chaosmonkey",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8080/actuator"
+        },
+        "func": "enable_chaosmonkey",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    },
+    {
+      "name": "configure_assaults",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8080/actuator",
+          "assaults_configuration": {
+            "level": 1,
+            "latencyRangeStart": 5000,
+            "latencyRangeEnd": 10000,
+            "latencyActive": true,
+            "exceptionsActive": false,
+            "killApplicationActive": false
+          }
+        },
+        "func": "change_assaults_configuration",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    }
+  ],
+  "rollbacks": [
+    {
+      "name": "disable-chaosmonkey",
+      "type": "action",
+      "provider": {
+        "type": "python",
+        "module": "chaosspring.actions",
+        "func": "disable_chaosmonkey",
+        "arguments": {
+          "base_url": "http://localhost:8080/actuator"
+        }
+      }
+    }
+  ]
+}
