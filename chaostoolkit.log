@@ -1,0 +1,413 @@
+[36m[2020-07-09 09:58:56 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 09:58:56 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 09:58:56 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 09:58:57 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 09:58:57 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 09:58:57 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 09:58:57 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 09:58:57 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 09:58:57 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 09:58:57 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 09:58:57 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 09:58:57 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 09:58:57 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2020-07-09 09:58:57 ERROR] [cli:129][39m could not find Python module 'chaosspring.actions' in activity 'enable_chaosmonkey'
+[36m[2020-07-09 09:58:57 DEBUG] [cli:130][39m could not find Python module 'chaosspring.actions' in activity 'enable_chaosmonkey'
+[36m[2020-07-09 09:59:33 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 09:59:33 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 09:59:33 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 09:59:34 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 09:59:34 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 09:59:34 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 09:59:34 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 09:59:34 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 09:59:34 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 09:59:34 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-09 09:59:34 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-07-09 09:59:34 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 09:59:34 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 09:59:34 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2020-07-09 09:59:34 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 09:59:34 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 09:59:34 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-09 09:59:34 INFO] [experiment:197][39m Running experiment: Employee when database is down
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-09 09:59:34 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 09:59:34 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 09:59:34 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:29:34 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 09:59:34 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 09:59:34 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 09:59:34 INFO] [activity:161][39m Action: enable_chaosmonkey
+[36m[2020-07-09 09:59:34 DEBUG] [python:36][39m Activity 'enable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 09:59:34 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is enabled'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 09:59:34 INFO] [activity:161][39m Action: configure_assaults
+[36m[2020-07-09 09:59:34 DEBUG] [python:36][39m Activity 'configure_assaults' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 09:59:34 DEBUG] [activity:179][39m   => succeeded with 'Assault config has changed'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 09:59:34 INFO] [activity:161][39m Action: configure_repository_watcher
+[36m[2020-07-09 09:59:34 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '26', 'Date': 'Thu, 09 Jul 2020 04:29:34 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': 'Watcher config has changed'}'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-09 09:59:34 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 09:59:34 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 09:59:34 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:29:34 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 09:59:34 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 09:59:34 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-07-09 09:59:34 INFO] [experiment:355][39m Let's rollback...
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 09:59:34 INFO] [rollback:28][39m Rollback: disable_chaosmonkey
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 09:59:34 INFO] [activity:161][39m Action: disable_chaosmonkey
+[36m[2020-07-09 09:59:34 DEBUG] [python:36][39m Activity 'disable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 09:59:34 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is disabled'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 09:59:34 INFO] [experiment:305][39m Experiment ended with status: completed
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-09 09:59:34 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-09 09:59:34 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:02:18 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 10:02:18 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 10:02:18 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 10:02:19 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:02:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:02:19 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 10:02:19 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 10:02:19 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:02:19 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:02:19 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-09 10:02:19 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-07-09 10:02:19 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:02:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:02:19 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2020-07-09 10:02:19 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:02:19 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:02:19 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-09 10:02:19 INFO] [experiment:197][39m Running experiment: Employee when database is down
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-09 10:02:19 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:19 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:02:19 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:32:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:19 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:02:19 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:19 INFO] [activity:161][39m Action: enable_chaosmonkey
+[36m[2020-07-09 10:02:19 DEBUG] [python:36][39m Activity 'enable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:02:19 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is enabled'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:19 INFO] [activity:161][39m Action: configure_assaults
+[36m[2020-07-09 10:02:19 DEBUG] [python:36][39m Activity 'configure_assaults' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:02:19 DEBUG] [activity:179][39m   => succeeded with 'Assault config has changed'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:19 INFO] [activity:161][39m Action: configure_repository_watcher
+[36m[2020-07-09 10:02:19 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '26', 'Date': 'Thu, 09 Jul 2020 04:32:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': 'Watcher config has changed'}'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-09 10:02:19 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:19 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:02:19 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:32:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:19 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:02:19 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-07-09 10:02:19 INFO] [experiment:355][39m Let's rollback...
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 10:02:19 INFO] [rollback:28][39m Rollback: disable_chaosmonkey
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:19 INFO] [activity:161][39m Action: disable_chaosmonkey
+[36m[2020-07-09 10:02:19 DEBUG] [python:36][39m Activity 'disable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:02:19 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is disabled'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 10:02:19 INFO] [experiment:305][39m Experiment ended with status: completed
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-09 10:02:19 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-09 10:02:19 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:02:30 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 10:02:30 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 10:02:30 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 10:02:31 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:02:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:02:31 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 10:02:31 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 10:02:31 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:02:31 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:02:31 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-09 10:02:31 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-07-09 10:02:31 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:02:31 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:02:31 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2020-07-09 10:02:31 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:02:31 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:02:31 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-09 10:02:31 INFO] [experiment:197][39m Running experiment: Employee when database is down
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-09 10:02:31 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:31 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:02:31 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:32:31 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:31 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:02:31 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:31 INFO] [activity:161][39m Action: enable_chaosmonkey
+[36m[2020-07-09 10:02:31 DEBUG] [python:36][39m Activity 'enable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:02:31 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is enabled'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:31 INFO] [activity:161][39m Action: configure_assaults
+[36m[2020-07-09 10:02:31 DEBUG] [python:36][39m Activity 'configure_assaults' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:02:31 DEBUG] [activity:179][39m   => succeeded with 'Assault config has changed'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:31 INFO] [activity:161][39m Action: configure_repository_watcher
+[36m[2020-07-09 10:02:31 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '26', 'Date': 'Thu, 09 Jul 2020 04:32:31 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': 'Watcher config has changed'}'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-09 10:02:31 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:31 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:02:31 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:32:31 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:31 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:02:31 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-07-09 10:02:31 INFO] [experiment:355][39m Let's rollback...
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 10:02:31 INFO] [rollback:28][39m Rollback: disable_chaosmonkey
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:02:31 INFO] [activity:161][39m Action: disable_chaosmonkey
+[36m[2020-07-09 10:02:31 DEBUG] [python:36][39m Activity 'disable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:02:31 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is disabled'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 10:02:31 INFO] [experiment:305][39m Experiment ended with status: completed
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-09 10:02:31 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-09 10:02:31 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:05:54 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 10:05:54 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 10:05:54 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 10:05:56 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 10:05:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:05:56 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:05:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:05:56 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 10:05:56 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 10:05:56 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:05:56 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:05:56 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-09 10:05:56 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-07-09 10:05:56 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:05:56 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:05:56 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2020-07-09 10:05:56 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:05:56 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:05:56 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 10:05:56 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-09 10:05:56 INFO] [experiment:197][39m Running experiment: Employee when database is down
+[36m[2020-07-09 10:05:56 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-09 10:05:56 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:05:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:05:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:05:56 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:05:57 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:35:57 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:05:57 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:05:57 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:05:57 INFO] [activity:161][39m Action: enable_chaosmonkey
+[36m[2020-07-09 10:05:57 DEBUG] [python:36][39m Activity 'enable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:05:57 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is enabled'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:05:57 INFO] [activity:161][39m Action: configure_assaults
+[36m[2020-07-09 10:05:57 DEBUG] [python:36][39m Activity 'configure_assaults' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:05:57 DEBUG] [activity:179][39m   => succeeded with 'Assault config has changed'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:05:57 INFO] [activity:161][39m Action: configure_repository_watcher
+[36m[2020-07-09 10:05:57 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '26', 'Date': 'Thu, 09 Jul 2020 04:35:57 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': 'Watcher config has changed'}'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-09 10:05:57 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:05:57 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:05:57 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Length': '0', 'Date': 'Thu, 09 Jul 2020 04:35:57 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': ''}'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:05:57 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:05:57 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2020-07-09 10:05:57 INFO] [experiment:355][39m Let's rollback...
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 10:05:57 INFO] [rollback:28][39m Rollback: disable_chaosmonkey
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:05:57 INFO] [activity:161][39m Action: disable_chaosmonkey
+[36m[2020-07-09 10:05:57 DEBUG] [python:36][39m Activity 'disable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:05:57 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is disabled'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2020-07-09 10:05:57 INFO] [experiment:305][39m Experiment ended with status: completed
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-09 10:05:57 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-09 10:05:57 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:07:42 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 10:07:42 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 10:07:42 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 10:07:43 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 10:07:43 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:07:43 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:07:43 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:07:43 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 10:07:43 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 10:07:43 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:07:43 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:07:43 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-09 10:07:43 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-07-09 10:07:43 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:07:43 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:07:43 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2020-07-09 10:07:43 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:07:43 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:07:43 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 10:07:43 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-09 10:07:43 INFO] [experiment:197][39m Running experiment: Employee when database is down
+[36m[2020-07-09 10:07:43 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-09 10:07:43 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:07:43 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:07:43 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:07:43 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:07:44 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:37:44 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:07:44 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:07:44 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:07:44 INFO] [activity:161][39m Action: enable_chaosmonkey
+[36m[2020-07-09 10:07:44 DEBUG] [python:36][39m Activity 'enable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:07:44 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is enabled'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:07:44 INFO] [activity:161][39m Action: configure_assaults
+[36m[2020-07-09 10:07:44 DEBUG] [python:36][39m Activity 'configure_assaults' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:07:44 DEBUG] [activity:179][39m   => succeeded with 'Assault config has changed'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:07:44 INFO] [activity:161][39m Action: configure_repository_watcher
+[36m[2020-07-09 10:07:44 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '26', 'Date': 'Thu, 09 Jul 2020 04:37:44 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': 'Watcher config has changed'}'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-09 10:07:44 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:07:44 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:07:44 DEBUG] [activity:179][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:37:44 GMT', 'Connection': 'close'}, 'body': {'timestamp': '2020-07-09T04:37:44.212+0000', 'status': 500, 'error': 'Internal Server Error', 'message': 'No message available', 'path': '/employee/all'}}'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:07:44 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2020-07-09 10:07:44 CRITICAL] [experiment:247][39m Steady state probe 'we-can-retrieve-employee-data' is not in the given tolerance so failing this experiment
+[32m[2020-07-09 10:07:44 INFO] [experiment:305][39m Experiment ended with status: deviated
+[32m[2020-07-09 10:07:44 INFO] [experiment:309][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-09 10:07:44 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-09 10:07:44 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:09:15 DEBUG] [cli:73][39m ###############################################################################
+[36m[2020-07-09 10:09:15 DEBUG] [cli:74][39m Running command 'run'
+[36m[2020-07-09 10:09:15 DEBUG] [cli:78][39m Using settings file '/Users/a0k01jq/.chaostoolkit/settings.yaml'
+[36m[2020-07-09 10:09:16 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/Users/a0k01jq/.chaostoolkit/settings.yaml'.
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2020-07-09 10:09:16 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:09:16 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2020-07-09 10:09:16 INFO] [experiment:54][39m Validating the experiment's syntax
+[36m[2020-07-09 10:09:16 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:09:16 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:09:16 DEBUG] [secret:89][39m Secrets loaded
+[32m[2020-07-09 10:09:16 INFO] [experiment:103][39m Experiment looks valid
+[36m[2020-07-09 10:09:16 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2020-07-09 10:09:16 DEBUG] [caching:25][39m Building activity cache...
+[36m[2020-07-09 10:09:16 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2020-07-09 10:09:16 DEBUG] [configuration:47][39m Loading configuration...
+[36m[2020-07-09 10:09:16 DEBUG] [secret:74][39m Loading secrets...
+[36m[2020-07-09 10:09:16 DEBUG] [secret:89][39m Secrets loaded
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:39][39m Initializing controls
+[32m[2020-07-09 10:09:16 INFO] [experiment:197][39m Running experiment: Employee when database is down
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2020-07-09 10:09:16 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:09:16 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:09:16 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:39:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': []}'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:09:16 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[32m[2020-07-09 10:09:16 INFO] [hypothesis:222][39m Steady state hypothesis is met!
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:09:16 INFO] [activity:161][39m Action: enable_chaosmonkey
+[36m[2020-07-09 10:09:16 DEBUG] [python:36][39m Activity 'enable_chaosmonkey' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:09:16 DEBUG] [activity:179][39m   => succeeded with 'Chaos Monkey is enabled'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:09:16 INFO] [activity:161][39m Action: configure_assaults
+[36m[2020-07-09 10:09:16 DEBUG] [python:36][39m Activity 'configure_assaults' loaded from '/Users/a0k01jq/.venvs/chaostk/lib/python3.7/site-packages/chaosspring/actions.py'
+[36m[2020-07-09 10:09:16 DEBUG] [activity:179][39m   => succeeded with 'Assault config has changed'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:09:16 INFO] [activity:161][39m Action: configure_repository_watcher
+[36m[2020-07-09 10:09:16 DEBUG] [activity:179][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '26', 'Date': 'Thu, 09 Jul 2020 04:39:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}, 'body': 'Watcher config has changed'}'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2020-07-09 10:09:16 INFO] [hypothesis:184][39m Steady state hypothesis: Employee data is available
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2020-07-09 10:09:16 INFO] [activity:161][39m Probe: we-can-retrieve-employee-data
+[36m[2020-07-09 10:09:16 DEBUG] [activity:179][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Thu, 09 Jul 2020 04:39:16 GMT', 'Connection': 'close'}, 'body': {'timestamp': '2020-07-09T04:39:16.674+0000', 'status': 500, 'error': 'Internal Server Error', 'message': 'No message available', 'path': '/employee/all'}}'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2020-07-09 10:09:16 DEBUG] [hypothesis:212][39m allowed tolerance is 200
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2020-07-09 10:09:16 CRITICAL] [experiment:247][39m Steady state probe 'we-can-retrieve-employee-data' is not in the given tolerance so failing this experiment
+[32m[2020-07-09 10:09:16 INFO] [experiment:305][39m Experiment ended with status: deviated
+[32m[2020-07-09 10:09:16 INFO] [experiment:309][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2020-07-09 10:09:16 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2020-07-09 10:09:16 DEBUG] [caching:42][39m Clearing activities cache
